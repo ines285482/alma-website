@@ -17,7 +17,6 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- POLICES : Cinzel (Serif), Montserrat (Sans), Qwigley (Signature) -->
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Montserrat:wght@300;400;500&family=Qwigley&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
     <script>
@@ -87,7 +86,6 @@
             z-index: 20;
         }
         
-        /* Transition douce pour les images sticky */
         .sticky-img {
             transition: opacity 0.8s ease-in-out;
             position: absolute;
@@ -132,14 +130,10 @@
             <div class="absolute bottom-0 left-0 w-full h-64 bg-gradient-to-t from-alma-obsidian via-alma-obsidian/80 to-transparent"></div>
         </div>
         <div class="relative z-10 text-center px-6 max-w-5xl mx-auto mt-12">
-            <!-- Surtitre harmonisé -->
             <p class="mb-8 text-[10px] md:text-xs tracking-[0.4em] uppercase font-bold text-alma-gold animate-fade-in-up font-sans" style="animation-delay: 0.1s;">Members-only</p>
-            
-            <!-- Titre Principal -->
             <h1 class="font-serif text-4xl md:text-6xl lg:text-8xl leading-tight mb-8 md:mb-10 tracking-wider text-alma-cream glow-text animate-fade-in-up" style="animation-delay: 0.3s;">
                 Beyond doing.<br>Into being.
             </h1>
-            
             <div class="h-[1px] w-24 bg-gradient-to-r from-transparent via-alma-gold/50 to-transparent mx-auto mb-10 animate-fade-in-up" style="animation-delay: 0.5s;"></div>
             <p class="text-xs md:text-sm font-light tracking-[0.15em] leading-relaxed text-alma-sand/90 max-w-2xl mx-auto uppercase animate-fade-in-up font-sans" style="animation-delay: 0.7s;">
                 A private club where inspiring souls gather through immersive experiences to seek depth & conscious connection.
@@ -219,7 +213,7 @@
         </div>
     </section>
 
-    <!-- EXPERIENCES (STICKY SCROLL + PHOTOS CORRIGÉES) -->
+    <!-- EXPERIENCES -->
     <section id="experiences" class="bg-gradient-to-b from-alma-obsidian via-alma-rust/30 to-alma-obsidian relative grain-overlay">
         <div class="separator-gradient"></div>
         <div class="py-20 text-center">
@@ -239,7 +233,9 @@
                     <div class="experience-block group" data-index="0">
                         <!-- MOBILE IMAGE -->
                         <div class="md:hidden w-full h-64 mb-6 rounded-sm overflow-hidden relative">
-                            <img src="https://images.unsplash.com/photo-1540324155974-7af1487b34de?q=80&w=2600&auto=format&fit=crop" class="w-full h-full object-cover" alt="Ritual">
+                            <!-- IMAGE LOCALE : release.jpg -->
+                            <img src="release.jpg" class="w-full h-full object-cover" alt="Ritual"
+                                 onerror="this.src='https://images.unsplash.com/photo-1540324155974-7af1487b34de?q=80&w=2600&auto=format&fit=crop'">
                         </div>
                         <span class="text-[10px] text-alma-gold uppercase tracking-widest mb-2 block font-sans">Format: 90 Minutes</span>
                         <h3 class="font-serif text-3xl md:text-4xl text-alma-cream mb-6 transition-colors">The Release</h3>
@@ -255,7 +251,9 @@
                     <div class="experience-block group" data-index="1">
                         <!-- MOBILE IMAGE -->
                         <div class="md:hidden w-full h-64 mb-6 rounded-sm overflow-hidden relative">
-                            <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?q=80&w=2600&auto=format&fit=crop" class="w-full h-full object-cover" alt="Connection">
+                            <!-- IMAGE LOCALE : connection.jpg -->
+                            <img src="connection.jpg" class="w-full h-full object-cover" alt="Connection"
+                                 onerror="this.src='https://images.unsplash.com/photo-1523580494863-6f3031224c94?q=80&w=2600&auto=format&fit=crop'">
                         </div>
                         <span class="text-[10px] text-alma-gold uppercase tracking-widest mb-2 block font-sans">Format: Private Gatherings</span>
                         <h3 class="font-serif text-3xl md:text-4xl text-alma-cream mb-6 transition-colors">The Connection</h3>
@@ -289,15 +287,17 @@
                     <div class="absolute inset-0 rounded-sm overflow-hidden border border-white/10">
                         <div class="absolute inset-0 bg-gradient-to-t from-alma-obsidian/60 via-transparent to-transparent z-10"></div>
                         
-                        <!-- Image 1: Ritual (Hair Whip Red - FIXED URL) -->
-                        <img src="https://images.unsplash.com/photo-1540324155974-7af1487b34de?q=80&w=2600&auto=format&fit=crop" 
-                             class="sticky-img opacity-100" id="img-0" alt="Ritual">
+                        <!-- Image 1: Ritual (LOCALE : release.jpg) -->
+                        <img src="release.jpg" 
+                             class="sticky-img opacity-100" id="img-0" alt="Ritual"
+                             onerror="this.src='https://images.unsplash.com/photo-1540324155974-7af1487b34de?q=80&w=2600&auto=format&fit=crop'">
                         
-                        <!-- Image 2: Connection (Bonfire Beach - FIXED URL) -->
-                        <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?q=80&w=2600&auto=format&fit=crop" 
-                             class="sticky-img opacity-0" id="img-1" alt="Connection">
+                        <!-- Image 2: Connection (LOCALE : connection.jpg) -->
+                        <img src="connection.jpg" 
+                             class="sticky-img opacity-0" id="img-1" alt="Connection"
+                             onerror="this.src='https://images.unsplash.com/photo-1523580494863-6f3031224c94?q=80&w=2600&auto=format&fit=crop'">
                              
-                        <!-- Image 3: Immersion (Ocean View Curtains - FIXED URL) -->
+                        <!-- Image 3: Immersion -->
                         <img src="https://images.unsplash.com/photo-1515397764353-cd2ad92372af?q=80&w=2600&auto=format&fit=crop" 
                              class="sticky-img opacity-0" id="img-2" alt="Retreat">
                     </div>
@@ -370,13 +370,13 @@
         </div>
     </section>
 
-    <!-- WHAT YOU GET (RESTORED) -->
+    <!-- WHAT YOU GET -->
     <section class="py-16 md:py-24 bg-alma-obsidian">
         <div class="separator-gradient"></div>
         <div class="max-w-6xl mx-auto px-6">
             <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-20 gap-8">
                 <div>
-                    <span class="text-alma-gold text-[10px] tracking-[0.3em] uppercase block mb-4 font-sans">The membership</span>
+                    <span class="text-alma-gold text-[10px] tracking-[0.3em] uppercase block mb-4 font-sans">The Membership</span>
                     <h2 class="font-serif text-3xl md:text-5xl text-alma-cream">What You'll Get</h2>
                 </div>
                 <p class="text-alma-sand/60 font-light text-sm max-w-xs text-left md:text-right font-sans">By joining Alma, you are not signing up for content. You are entering a living ecosystem.</p>
@@ -421,28 +421,14 @@
         </div>
     </section>
 
-    <!-- INVISIBLE SIGNATURE (RESTORED) -->
+    <!-- INVISIBLE SIGNATURE (HIDDEN) -->
+    <!-- 
     <section id="signature" class="relative py-16 md:py-24 overflow-hidden bg-gradient-to-br from-[#2a1512] via-alma-rust to-alma-obsidian">
-        <div class="separator-gradient"></div>
-        <div class="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-[#161210] to-transparent z-10 pointer-events-none"></div>
-        <div class="absolute inset-0">
-            <img src="https://unsplash.com/photos/BQsH-RSjvEo/download" onerror="this.src='https://images.unsplash.com/photo-1602150838634-934c7c8c3725?q=80&w=2600&auto=format&fit=crop'" alt="Scent Smoke Abstract" class="w-full h-full object-cover opacity-20 mix-blend-screen animate-pulse duration-[5000ms]">
-        </div>
-        <div class="relative z-10 max-w-7xl mx-auto px-6 grid md:grid-cols-2 items-center reveal-on-scroll fade-in-scroll">
-            <div class="text-alma-cream md:pr-12">
-                <div class="flex items-center gap-4 mb-4 md:mb-6">
-                    <div class="h-[1px] w-12 bg-gradient-to-r from-alma-gold to-transparent"></div>
-                    <span class="text-[10px] tracking-[0.3em] text-alma-gold uppercase font-sans">Invisible Signature</span>
-                </div>
-                <h2 class="font-serif text-3xl md:text-5xl mb-6 md:mb-8 text-alma-cream">Olfactory Memory</h2>
-                <p class="font-serif italic text-lg md:text-xl text-alma-sand/90 mb-6 md:mb-8 leading-relaxed">"A scent that grounds and elevates — familiar yet magnetic."</p>
-                <div class="flex flex-wrap gap-x-6 gap-y-2 text-[10px] font-medium uppercase tracking-[0.2em] text-alma-sand/60 font-sans"><span>Cedarwood</span> <span>Amber</span> <span>Smoked Fig</span> <span>Oud</span></div>
-                <p class="mt-6 md:mt-8 text-alma-sand/60 font-light max-w-md text-sm leading-relaxed font-sans">Every Alma experience is anchored by a signature scent. It lingers on the skin after the dance, floats in the air after the circle, and inhabits every retreat.</p>
-            </div>
-        </div>
+        ... content hidden ...
     </section>
+    -->
 
-    <!-- FOUNDER (RESTORED) -->
+    <!-- FOUNDER -->
     <section class="py-16 md:py-24 bg-[#120C0B] relative grain-overlay">
         <div class="separator-gradient"></div>
         <div class="max-w-5xl mx-auto px-6">
@@ -467,13 +453,14 @@
         </div>
     </section>
 
-    <!-- THE LAND (Photo Portugal Cliffs Majestic RESTORED) -->
+    <!-- THE LAND (Photo Portugal Local) -->
     <section class="relative h-[80vh] flex items-center justify-center overflow-hidden bg-gradient-to-b from-alma-obsidian via-alma-rust/20 to-alma-obsidian">
         <div class="separator-gradient"></div>
         <div class="absolute inset-0 z-0">
-            <!-- PHOTO PORTUGAL : Falaises de Cabo da Roca (Sombre et Majestueux) -->
-            <img src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?q=80&w=2600&auto=format&fit=crop" 
-                 class="w-full h-full object-cover opacity-60 mix-blend-overlay" alt="Portugal Cliffs">
+            <!-- PHOTO PORTUGAL LOCALE : portugal.jpg -->
+            <img src="portugal.jpg" 
+                 class="w-full h-full object-cover opacity-60 mix-blend-overlay" alt="Portugal Cliffs"
+                 onerror="this.src='https://images.unsplash.com/photo-1559737594-b9574d5b1b93?q=80&w=2600&auto=format&fit=crop'">
             <div class="absolute inset-0 bg-black/40"></div>
         </div>
         <div class="relative z-10 text-center max-w-4xl px-6">
