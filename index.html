@@ -17,6 +17,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- POLICES : Cinzel (Serif), Montserrat (Sans), Qwigley (Signature) -->
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Montserrat:wght@300;400;500&family=Qwigley&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
     <script>
@@ -63,7 +64,7 @@
         }
     </script>
     <style>
-        body { background-color: #0F0A09; color: #F2E8D9; }
+        body { background-color: #0F0A09; color: #F2E8D9; font-family: 'Montserrat', sans-serif; }
         .grain-overlay { position: relative; }
         .grain-overlay::after {
             content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 100%;
@@ -97,7 +98,7 @@
         .opacity-100 { opacity: 1; }
     </style>
 </head>
-<body class="antialiased overflow-x-hidden selection:bg-alma-rust selection:text-white">
+<body class="antialiased overflow-x-hidden selection:bg-alma-rust selection:text-white font-sans">
 
     <!-- Navigation -->
     <nav class="fixed w-full z-50 bg-gradient-to-b from-alma-obsidian via-alma-obsidian/90 to-transparent backdrop-blur-[2px] transition-all duration-500">
@@ -105,9 +106,9 @@
             <div class="flex justify-between items-center h-24">
                 <a href="#" class="font-serif text-2xl tracking-[0.2em] text-alma-cream hover:text-alma-gold transition-colors duration-500 relative z-50">ALMA</a>
                 <div class="hidden md:flex space-x-12 items-center">
-                    <a href="#essence" class="text-[10px] tracking-[0.2em] uppercase text-alma-sand/70 hover:text-alma-gold transition-colors">The Spirit</a>
-                    <a href="#experiences" class="text-[10px] tracking-[0.2em] uppercase text-alma-sand/70 hover:text-alma-gold transition-colors">Experiences</a>
-                    <a href="#signature" class="text-[10px] tracking-[0.2em] uppercase text-alma-sand/70 hover:text-alma-gold transition-colors">Signature</a>
+                    <a href="#essence" class="text-[10px] tracking-[0.2em] uppercase text-alma-sand/70 hover:text-alma-gold transition-colors font-sans">The Spirit</a>
+                    <a href="#experiences" class="text-[10px] tracking-[0.2em] uppercase text-alma-sand/70 hover:text-alma-gold transition-colors font-sans">Experiences</a>
+                    <a href="#signature" class="text-[10px] tracking-[0.2em] uppercase text-alma-sand/70 hover:text-alma-gold transition-colors font-sans">Signature</a>
                     <a href="https://almacircle.fillout.com/register" target="_blank" class="px-6 py-2 bg-alma-rust text-white border border-alma-rust hover:bg-white hover:text-alma-obsidian hover:border-white font-serif text-[10px] tracking-[0.2em] uppercase transition-all duration-500 shadow-[0_0_25px_rgba(88,41,30,0.4)]">Join the club</a>
                 </div>
                 <button id="mobile-menu-btn" class="md:hidden text-alma-cream hover:text-alma-gold relative z-50 p-2"><i data-lucide="menu" class="w-8 h-8"></i></button>
@@ -131,20 +132,21 @@
             <div class="absolute bottom-0 left-0 w-full h-64 bg-gradient-to-t from-alma-obsidian via-alma-obsidian/80 to-transparent"></div>
         </div>
         <div class="relative z-10 text-center px-6 max-w-5xl mx-auto mt-12">
-            <p class="mb-8 text-[10px] md:text-xs tracking-[0.4em] uppercase font-bold text-alma-gold animate-fade-in-up" style="animation-delay: 0.1s;">Members-only</p>
+            <!-- Surtitre harmonisé -->
+            <p class="mb-8 text-[10px] md:text-xs tracking-[0.4em] uppercase font-bold text-alma-gold animate-fade-in-up font-sans" style="animation-delay: 0.1s;">Members-only</p>
             
-            <!-- TITRE MODIFIÉ : Taille réduite, italique supprimé, couleur uniforme -->
+            <!-- Titre Principal -->
             <h1 class="font-serif text-4xl md:text-6xl lg:text-8xl leading-tight mb-8 md:mb-10 tracking-wider text-alma-cream glow-text animate-fade-in-up" style="animation-delay: 0.3s;">
                 Beyond doing.<br>Into being.
             </h1>
             
             <div class="h-[1px] w-24 bg-gradient-to-r from-transparent via-alma-gold/50 to-transparent mx-auto mb-10 animate-fade-in-up" style="animation-delay: 0.5s;"></div>
-            <p class="text-xs md:text-sm font-light tracking-[0.15em] leading-relaxed text-alma-sand/90 max-w-2xl mx-auto uppercase animate-fade-in-up" style="animation-delay: 0.7s;">
+            <p class="text-xs md:text-sm font-light tracking-[0.15em] leading-relaxed text-alma-sand/90 max-w-2xl mx-auto uppercase animate-fade-in-up font-sans" style="animation-delay: 0.7s;">
                 A private club where inspiring souls gather through immersive experiences to seek depth & conscious connection.
             </p>
         </div>
         <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-alma-sand/30 animate-pulse">
-            <span class="text-[10px] tracking-widest uppercase mb-2 block text-center">Scroll</span>
+            <span class="text-[10px] tracking-widest uppercase mb-2 block text-center font-sans">Scroll</span>
             <div class="h-12 w-[1px] bg-gradient-to-b from-transparent via-alma-gold/50 to-transparent mx-auto"></div>
         </div>
     </header>
@@ -154,8 +156,8 @@
         <div class="separator-gradient"></div>
         <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-5 mix-blend-multiply"></div>
         <div class="max-w-4xl mx-auto text-center relative z-10 reveal-on-scroll fade-in-scroll">
-            <span class="text-alma-sand/80 text-[10px] tracking-[0.3em] uppercase block mb-6 md:mb-8">The Movement</span>
-            <h2 class="font-serif text-2xl md:text-5xl text-white mb-12 md:mb-16 leading-tight drop-shadow-md">
+            <span class="text-alma-sand/80 text-[10px] tracking-[0.3em] uppercase block mb-6 md:mb-8 font-sans">The Movement</span>
+            <h2 class="font-serif text-3xl md:text-5xl text-white mb-12 md:mb-16 leading-tight drop-shadow-md">
                 A slowing of the mind,<br>an awakening of the body,<br>a memory of the soul.
             </h2>
             
@@ -166,7 +168,7 @@
                         "In a world that glorifies speed, Alma invites a different rhythm—one of depth."
                     </p>
                 </div>
-                <div class="text-white/80 font-light leading-relaxed text-sm tracking-wide">
+                <div class="text-white/80 font-light leading-relaxed text-sm tracking-wide font-sans">
                     <p class="mb-6">Here, growth is born from silence, breath, movement.</p>
                     <p>Alma is not a one-time experience. It is a movement, a private club, a living circle of entrepreneurs who choose to create from truth, not from tension.</p>
                 </div>
@@ -184,30 +186,30 @@
                         <img src="https://images.unsplash.com/photo-1535295972055-1c762f4483e5?q=80&w=1962&auto=format&fit=crop" class="w-full h-full object-cover opacity-60 hover:opacity-80 transition-opacity duration-700" alt="Atmospheric Portrait">
                         <div class="absolute inset-0 bg-gradient-to-t from-alma-obsidian via-transparent to-transparent"></div>
                         <div class="absolute bottom-8 left-8 text-left">
-                            <p class="font-serif text-3xl text-alma-cream mb-2">The Seekers</p>
-                            <p class="text-xs text-alma-gold tracking-widest uppercase">Outliers & Creators</p>
+                            <p class="font-serif text-2xl md:text-3xl text-alma-cream mb-2">The Seekers</p>
+                            <p class="text-xs text-alma-gold tracking-widest uppercase font-sans">Outliers & Creators</p>
                         </div>
                     </div>
                 </div>
                 <div class="space-y-12">
                     <div>
-                        <span class="text-alma-gold text-[10px] tracking-[0.3em] uppercase block mb-6">The Selection</span>
-                        <h2 class="font-serif text-4xl md:text-5xl text-alma-cream mb-8">Who Can Apply</h2>
-                        <p class="font-serif italic text-alma-sand/60 text-lg mb-10">"A curated circle for those who feel the call."</p>
+                        <span class="text-alma-gold text-[10px] tracking-[0.3em] uppercase block mb-6 font-sans">The Selection</span>
+                        <h2 class="font-serif text-3xl md:text-5xl text-alma-cream mb-8">Who Can Apply</h2>
+                        <p class="font-serif italic text-alma-sand/60 text-lg md:text-xl mb-10">"A curated circle for those who feel the call."</p>
                     </div>
                     
                     <div class="space-y-8 border-l border-white/10 pl-8">
                         <div>
-                            <h4 class="text-alma-cream font-medium mb-2">The Profile</h4>
-                            <p class="text-alma-sand/60 font-light text-sm leading-relaxed">Entrepreneurs building a vision aligned with their truth. Leaders in transition seeking truer foundations. Sensitive souls craving depth.</p>
+                            <h4 class="text-alma-cream font-serif text-xl mb-2">The Profile</h4>
+                            <p class="text-alma-sand/60 font-light text-sm leading-relaxed font-sans">Entrepreneurs building a vision aligned with their truth. Leaders in transition seeking truer foundations. Sensitive souls craving depth.</p>
                         </div>
                         <div>
-                            <h4 class="text-alma-cream font-medium mb-2">The Mindset</h4>
-                            <p class="text-alma-sand/60 font-light text-sm leading-relaxed">You are done with superficial networking. You crave a space where you don't have to explain your intensity or your ambition.</p>
+                            <h4 class="text-alma-cream font-serif text-xl mb-2">The Mindset</h4>
+                            <p class="text-alma-sand/60 font-light text-sm leading-relaxed font-sans">You are done with superficial networking. You crave a space where you don't have to explain your intensity or your ambition.</p>
                         </div>
                         <div>
-                            <h4 class="text-alma-cream font-medium mb-2">The Spirit</h4>
-                            <p class="text-alma-sand/60 font-light text-sm leading-relaxed">Authenticity over perfection. Experience over analysis. No need to be "healed". Just willing to be real.</p>
+                            <h4 class="text-alma-cream font-serif text-xl mb-2">The Spirit</h4>
+                            <p class="text-alma-sand/60 font-light text-sm leading-relaxed font-sans">Authenticity over perfection. Experience over analysis. No need to be "healed". Just willing to be real.</p>
                         </div>
                     </div>
                 </div>
@@ -215,69 +217,63 @@
         </div>
     </section>
 
-    <!-- EXPERIENCES (STICKY SCROLL + MOBILE OPTIMIZED) -->
+    <!-- EXPERIENCES (STICKY SCROLL + BONNES PHOTOS) -->
     <section id="experiences" class="bg-gradient-to-b from-alma-obsidian via-alma-rust/30 to-alma-obsidian relative grain-overlay">
         <div class="separator-gradient"></div>
         <div class="py-20 text-center">
-            <span class="text-alma-gold text-[10px] tracking-[0.3em] uppercase">Immersive Journey</span>
-            <h2 class="font-serif text-4xl mt-4 text-alma-cream">The Experiences</h2>
+            <span class="text-alma-gold text-[10px] tracking-[0.3em] uppercase font-sans">Immersive Journey</span>
+            <h2 class="font-serif text-3xl md:text-5xl mt-4 text-alma-cream">The Experiences</h2>
             <div class="h-[1px] w-24 bg-gradient-to-r from-transparent via-alma-gold/50 to-transparent mx-auto my-6"></div>
-            <p class="text-alma-gold/80 uppercase tracking-[0.2em] text-[10px]">Three pathways. One essence.</p>
+            <p class="text-alma-gold/80 uppercase tracking-[0.2em] text-[10px] font-sans">Three pathways. One essence.</p>
         </div>
 
         <div class="relative max-w-7xl mx-auto px-6 pb-32">
             <div class="grid md:grid-cols-2 gap-12">
                 
-                <!-- Left: Text Content (Scrollable on Desktop) -->
+                <!-- Left: Text Content -->
                 <div class="space-y-16 md:space-y-[20vh] py-[5vh]">
                     
                     <!-- Item 1: Ritual -->
                     <div class="experience-block group" data-index="0">
-                        <!-- MOBILE IMAGE (Hidden on desktop) -->
                         <div class="md:hidden w-full h-64 mb-6 rounded-sm overflow-hidden relative">
                             <img src="https://images.unsplash.com/photo-1540324155974-7af1487b34de?q=80&w=2600&auto=format&fit=crop" class="w-full h-full object-cover" alt="Ritual">
                         </div>
-                        <!-- CONTENT -->
-                        <span class="text-[10px] text-alma-gold uppercase tracking-widest mb-2 block">Format: 90 Minutes</span>
-                        <h3 class="font-serif text-4xl md:text-5xl text-alma-cream mb-6 transition-colors">The Release</h3>
-                        <p class="text-alma-sand/70 font-light leading-relaxed mb-6 max-w-md">
+                        <span class="text-[10px] text-alma-gold uppercase tracking-widest mb-2 block font-sans">Format: 90 Minutes</span>
+                        <h3 class="font-serif text-3xl md:text-4xl text-alma-cream mb-6 transition-colors">The Release</h3>
+                        <p class="text-alma-sand/70 font-light leading-relaxed mb-6 max-w-md font-sans">
                             A guided journey through dance, trance, and sound. No choreography, no performance — just presence. Dim lights, rising music: arabo-house, afro-house.
                         </p>
-                        <div class="flex gap-4 text-[10px] uppercase text-alma-sand/40 tracking-widest">
+                        <div class="flex gap-4 text-[10px] uppercase text-alma-sand/40 tracking-widest font-sans">
                             <span>Release</span> • <span>Awaken</span>
                         </div>
                     </div>
 
                     <!-- Item 2: Circle -->
                     <div class="experience-block group" data-index="1">
-                        <!-- MOBILE IMAGE -->
                         <div class="md:hidden w-full h-64 mb-6 rounded-sm overflow-hidden relative">
                             <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?q=80&w=2600&auto=format&fit=crop" class="w-full h-full object-cover" alt="Connection">
                         </div>
-                        <!-- CONTENT -->
-                        <span class="text-[10px] text-alma-gold uppercase tracking-widest mb-2 block">Format: Private Gatherings</span>
-                        <h3 class="font-serif text-4xl md:text-5xl text-alma-cream mb-6 transition-colors">The Connection</h3>
-                        <p class="text-alma-sand/70 font-light leading-relaxed mb-6 max-w-md">
+                        <span class="text-[10px] text-alma-gold uppercase tracking-widest mb-2 block font-sans">Format: Private Gatherings</span>
+                        <h3 class="font-serif text-3xl md:text-4xl text-alma-cream mb-6 transition-colors">The Connection</h3>
+                        <p class="text-alma-sand/70 font-light leading-relaxed mb-6 max-w-md font-sans">
                             We meet beyond the mask. Intimate circles, soulful dinners, sunset afterworks. From deep conversations to wild celebrations.
                         </p>
-                        <div class="flex gap-4 text-[10px] uppercase text-alma-sand/40 tracking-widest">
+                        <div class="flex gap-4 text-[10px] uppercase text-alma-sand/40 tracking-widest font-sans">
                             <span>Truth</span> • <span>Bond</span>
                         </div>
                     </div>
 
                     <!-- Item 3: Retreat -->
                     <div class="experience-block group" data-index="2">
-                        <!-- MOBILE IMAGE -->
                         <div class="md:hidden w-full h-64 mb-6 rounded-sm overflow-hidden relative">
                             <img src="https://images.unsplash.com/photo-1515397764353-cd2ad92372af?q=80&w=2600&auto=format&fit=crop" class="w-full h-full object-cover" alt="Retreat">
                         </div>
-                        <!-- CONTENT -->
-                        <span class="text-[10px] text-alma-gold uppercase tracking-widest mb-2 block">Format: Secret Retreats</span>
-                        <h3 class="font-serif text-4xl md:text-5xl text-alma-cream mb-6 transition-colors">The Immersion</h3>
-                        <p class="text-alma-sand/70 font-light leading-relaxed mb-6 max-w-md">
+                        <span class="text-[10px] text-alma-gold uppercase tracking-widest mb-2 block font-sans">Format: Secret Retreats</span>
+                        <h3 class="font-serif text-3xl md:text-4xl text-alma-cream mb-6 transition-colors">The Immersion</h3>
+                        <p class="text-alma-sand/70 font-light leading-relaxed mb-6 max-w-md font-sans">
                             A multi-day immersion in nature. Morning rituals, conscious workshops, deep circles. A secret place revealed only to members.
                         </p>
-                        <div class="flex gap-4 text-[10px] uppercase text-alma-sand/40 tracking-widest">
+                        <div class="flex gap-4 text-[10px] uppercase text-alma-sand/40 tracking-widest font-sans">
                             <span>Transform</span> • <span>Heal</span>
                         </div>
                     </div>
@@ -288,15 +284,15 @@
                     <div class="absolute inset-0 rounded-sm overflow-hidden border border-white/10">
                         <div class="absolute inset-0 bg-gradient-to-t from-alma-obsidian/60 via-transparent to-transparent z-10"></div>
                         
-                        <!-- Image 1: Ritual (Hair Whip Red) -->
+                        <!-- Ritual (Hair Whip) -->
                         <img src="https://images.unsplash.com/photo-1540324155974-7af1487b34de?q=80&w=2600&auto=format&fit=crop" 
                              class="sticky-img opacity-100" id="img-0" alt="Ritual">
                         
-                        <!-- Image 2: Connection (Bonfire Beach - srNcHlthiyI) -->
+                        <!-- Connection (Bonfire Beach) -->
                         <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?q=80&w=2600&auto=format&fit=crop" 
                              class="sticky-img opacity-0" id="img-1" alt="Connection">
                              
-                        <!-- Image 3: Immersion (Ocean View Curtains) -->
+                        <!-- Immersion (Ocean View Curtains) -->
                         <img src="https://images.unsplash.com/photo-1515397764353-cd2ad92372af?q=80&w=2600&auto=format&fit=crop" 
                              class="sticky-img opacity-0" id="img-2" alt="Retreat">
                     </div>
@@ -305,20 +301,20 @@
         </div>
     </section>
 
-    <!-- ECOSYSTEM (Warm Gradient Added) -->
+    <!-- ECOSYSTEM -->
     <section class="py-32 bg-gradient-to-b from-alma-obsidian via-alma-rust/30 to-alma-obsidian relative grain-overlay">
         <div class="separator-gradient"></div>
         <div class="max-w-7xl mx-auto px-6">
-            <h2 class="font-serif text-3xl md:text-4xl text-alma-cream mb-4 text-center tracking-widest">Guides Within the Circle</h2>
-            <p class="text-alma-sand/60 text-center mb-16 tracking-widest uppercase text-xs">Presences You May Encounter.</p>
+            <h2 class="font-serif text-3xl md:text-5xl text-alma-cream mb-4 text-center tracking-widest">Guides Within the Circle</h2>
+            <p class="text-alma-sand/60 text-center mb-16 tracking-widest uppercase text-xs font-sans">Presences You May Encounter.</p>
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <!-- Card 1 -->
                 <div class="relative h-80 group overflow-hidden bg-white/5">
                     <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=2070&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:opacity-60 transition-opacity duration-700 grayscale mix-blend-luminosity" alt="Therapist">
                     <div class="absolute inset-0 flex flex-col justify-end p-8 bg-gradient-to-t from-black/90 to-transparent">
-                        <h4 class="text-alma-gold font-serif text-xl mb-2 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">Therapists</h4>
-                        <p class="text-alma-sand/70 text-xs font-light opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">Working through presence and listening</p>
+                        <h3 class="text-alma-gold font-serif text-xl md:text-2xl mb-2 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">Therapists</h3>
+                        <p class="text-alma-sand/70 text-xs font-light opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100 font-sans">Working through presence and listening</p>
                     </div>
                 </div>
                 
@@ -326,8 +322,8 @@
                 <div class="relative h-80 group overflow-hidden bg-white/5">
                     <img src="https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?q=80&w=2070&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:opacity-60 transition-opacity duration-700 grayscale mix-blend-luminosity" alt="Energy">
                     <div class="absolute inset-0 flex flex-col justify-end p-8 bg-gradient-to-t from-black/90 to-transparent">
-                        <h4 class="text-alma-gold font-serif text-xl mb-2 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">Somatic Guides</h4>
-                        <p class="text-alma-sand/70 text-xs font-light opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">Offering grounded experiences</p>
+                        <h3 class="text-alma-gold font-serif text-xl md:text-2xl mb-2 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">Somatic Guides</h3>
+                        <p class="text-alma-sand/70 text-xs font-light opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100 font-sans">Offering grounded experiences</p>
                     </div>
                 </div>
 
@@ -335,8 +331,8 @@
                 <div class="relative h-80 group overflow-hidden bg-white/5">
                     <img src="https://images.unsplash.com/photo-1518834107812-67b0b7c58434?q=80&w=2070&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:opacity-60 transition-opacity duration-700 grayscale mix-blend-luminosity" alt="Movement">
                     <div class="absolute inset-0 flex flex-col justify-end p-8 bg-gradient-to-t from-black/90 to-transparent">
-                        <h4 class="text-alma-gold font-serif text-xl mb-2 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">Movement Facilitators</h4>
-                        <p class="text-alma-sand/70 text-xs font-light opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">Dance, breath, body awareness</p>
+                        <h3 class="text-alma-gold font-serif text-xl md:text-2xl mb-2 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">Movement Facilitators</h3>
+                        <p class="text-alma-sand/70 text-xs font-light opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100 font-sans">Dance, breath, body awareness</p>
                     </div>
                 </div>
 
@@ -344,23 +340,23 @@
                 <div class="relative h-80 group overflow-hidden bg-white/5">
                     <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=2070&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:opacity-60 transition-opacity duration-700 grayscale mix-blend-luminosity" alt="Sound">
                     <div class="absolute inset-0 flex flex-col justify-end p-8 bg-gradient-to-t from-black/90 to-transparent">
-                        <h4 class="text-alma-gold font-serif text-xl mb-2 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">Sound Artists</h4>
-                        <p class="text-alma-sand/70 text-xs font-light opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">Shaping emotional landscapes</p>
+                        <h3 class="text-alma-gold font-serif text-xl md:text-2xl mb-2 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">Sound Artists</h3>
+                        <p class="text-alma-sand/70 text-xs font-light opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100 font-sans">Shaping emotional landscapes</p>
                     </div>
                 </div>
 
-                <!-- Card 5 (Artists & Poets) -->
+                <!-- Card 5 -->
                 <div class="relative h-80 group overflow-hidden bg-white/5">
                     <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?q=80&w=2070&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:opacity-60 transition-opacity duration-700 grayscale mix-blend-luminosity" alt="Artists">
                     <div class="absolute inset-0 flex flex-col justify-end p-8 bg-gradient-to-t from-black/90 to-transparent">
-                        <h4 class="text-alma-gold font-serif text-xl mb-2 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">Artists & Poets</h4>
-                        <p class="text-alma-sand/70 text-xs font-light opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">Opening spaces rather than delivering answers</p>
+                        <h3 class="text-alma-gold font-serif text-xl md:text-2xl mb-2 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">Artists & Poets</h3>
+                        <p class="text-alma-sand/70 text-xs font-light opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100 font-sans">Opening spaces rather than delivering answers</p>
                     </div>
                 </div>
 
                 <!-- Card 6 -->
                 <div class="relative h-80 bg-alma-rust/10 border border-alma-rust/20 flex flex-col justify-center items-center p-8 text-center">
-                    <p class="font-serif italic text-alma-gold text-lg leading-relaxed">
+                    <p class="font-serif italic text-alma-gold text-lg md:text-xl leading-relaxed">
                         "They are not here to guide you. They are not here to fix you. They are here to hold space and allow something real to emerge."
                     </p>
                     <div class="h-[1px] w-12 bg-alma-rust mt-6"></div>
@@ -375,16 +371,16 @@
         <div class="max-w-6xl mx-auto px-6">
             <div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
                 <div>
-                    <span class="text-alma-gold text-[10px] tracking-[0.3em] uppercase block mb-4">Membership</span>
+                    <span class="text-alma-gold text-[10px] tracking-[0.3em] uppercase block mb-4 font-sans">Membership</span>
                     <h2 class="font-serif text-3xl md:text-5xl text-alma-cream">Access & Experience</h2>
                 </div>
-                <p class="text-alma-sand/60 font-light text-sm max-w-xs text-right">By joining Alma, you are not signing up for content. You are entering a living ecosystem.</p>
+                <p class="text-alma-sand/60 font-light text-sm max-w-xs text-right font-sans">By joining Alma, you are not signing up for content. You are entering a living ecosystem.</p>
             </div>
 
             <div class="grid md:grid-cols-2 gap-12 md:gap-24">
                 <div class="space-y-8">
-                    <h3 class="font-serif text-3xl text-alma-cream">The Tangible</h3>
-                    <ul class="space-y-4">
+                    <h3 class="font-serif text-2xl md:text-3xl text-alma-cream">The Tangible</h3>
+                    <ul class="space-y-4 font-sans text-sm md:text-base">
                         <li class="flex items-center gap-4 py-4 border-b border-white/5">
                             <span class="text-alma-rust font-bold text-lg">01</span>
                             <span class="text-alma-sand/80 font-light">1–2 curated gatherings per month in Lisbon</span>
@@ -410,17 +406,17 @@
                 
                 <div class="bg-gradient-to-br from-alma-rust/10 to-transparent p-12 relative overflow-hidden flex flex-col justify-center">
                     <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] opacity-30"></div>
-                    <h3 class="font-serif text-3xl text-alma-cream mb-8 relative z-10">The Intangible</h3>
-                    <p class="text-xl font-light text-alma-sand/90 leading-relaxed mb-8 relative z-10">
+                    <h3 class="font-serif text-2xl md:text-3xl text-alma-cream mb-8 relative z-10">The Intangible</h3>
+                    <p class="text-lg md:text-xl font-light text-alma-sand/90 leading-relaxed mb-8 relative z-10 font-sans">
                         Greater inner stability. Stronger intuition. Embodied confidence. A feeling of being seen without having to perform.
                     </p>
-                    <p class="font-serif italic text-alma-gold text-lg relative z-10">"Finding a kindred tribe with whom you can finally drop the mask."</p>
+                    <p class="font-serif italic text-alma-gold text-lg md:text-xl relative z-10">"Finding a kindred tribe with whom you can finally drop the mask."</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- INVISIBLE SIGNATURE (RETOUR VERSION ANCIENNE) -->
+    <!-- INVISIBLE SIGNATURE -->
     <section id="signature" class="relative py-16 md:py-32 overflow-hidden bg-gradient-to-br from-[#2a1512] via-alma-rust to-alma-obsidian">
         <div class="separator-gradient"></div>
         <div class="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-[#161210] to-transparent z-10 pointer-events-none"></div>
@@ -431,12 +427,12 @@
             <div class="text-alma-cream md:pr-12">
                 <div class="flex items-center gap-4 mb-4 md:mb-6">
                     <div class="h-[1px] w-12 bg-gradient-to-r from-alma-gold to-transparent"></div>
-                    <span class="text-[10px] tracking-[0.3em] text-alma-gold uppercase">Invisible Signature</span>
+                    <span class="text-[10px] tracking-[0.3em] text-alma-gold uppercase font-sans">Invisible Signature</span>
                 </div>
                 <h2 class="font-serif text-3xl md:text-5xl mb-6 md:mb-8 text-alma-cream">Olfactory Memory</h2>
                 <p class="font-serif italic text-lg md:text-xl text-alma-sand/90 mb-6 md:mb-8 leading-relaxed">"A scent that grounds and elevates — familiar yet magnetic."</p>
-                <div class="flex flex-wrap gap-x-6 gap-y-2 text-[10px] font-medium uppercase tracking-[0.2em] text-alma-sand/60"><span>Cedarwood</span> <span>Amber</span> <span>Smoked Fig</span> <span>Oud</span></div>
-                <p class="mt-6 md:mt-8 text-alma-sand/60 font-light max-w-md text-sm leading-relaxed">Every Alma experience is anchored by a signature scent. It lingers on the skin after the dance, floats in the air after the circle, and inhabits every retreat.</p>
+                <div class="flex flex-wrap gap-x-6 gap-y-2 text-[10px] font-medium uppercase tracking-[0.2em] text-alma-sand/60 font-sans"><span>Cedarwood</span> <span>Amber</span> <span>Smoked Fig</span> <span>Oud</span></div>
+                <p class="mt-6 md:mt-8 text-alma-sand/60 font-light max-w-md text-sm leading-relaxed font-sans">Every Alma experience is anchored by a signature scent. It lingers on the skin after the dance, floats in the air after the circle, and inhabits every retreat.</p>
             </div>
         </div>
     </section>
@@ -447,18 +443,17 @@
         <div class="max-w-5xl mx-auto px-6">
             <div class="flex flex-col md:flex-row gap-16 items-center">
                 <div class="w-full md:w-1/2 relative">
-                    <!-- SUPPRESSION DU GRAYSCALE -->
                     <div class="aspect-[3/4] relative overflow-hidden transition-all duration-1000">
                         <img src="ines.jpg" onerror="this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1964&auto=format&fit=crop'" class="w-full h-full object-cover" alt="Founder">
                     </div>
                 </div>
                 <div class="w-full md:w-1/2 text-center md:text-left">
-                    <span class="text-alma-gold text-[10px] tracking-[0.3em] uppercase block mb-6">The Founder</span>
-                    <h2 class="font-serif text-4xl mb-8 text-alma-cream">Who am I?</h2>
-                    <p class="font-sans font-light text-alma-sand/80 leading-loose mb-8">
+                    <span class="text-alma-gold text-[10px] tracking-[0.3em] uppercase block mb-6 font-sans">The Founder</span>
+                    <h2 class="font-serif text-3xl md:text-5xl mb-8 text-alma-cream">Who am I?</h2>
+                    <p class="font-sans font-light text-alma-sand/80 leading-loose mb-8 text-sm md:text-base">
                         I founded Alma from a simple truth: growth does not come from more effort, but from deeper presence.
                     </p>
-                    <p class="font-sans font-light text-alma-sand/80 leading-loose mb-12">
+                    <p class="font-sans font-light text-alma-sand/80 leading-loose mb-12 text-sm md:text-base">
                         Alma was born from years of inner shifts, silence, movement, and the need to build a space where entrepreneurs can reconnect with what truly drives them.
                     </p>
                     <p class="font-handwritten text-7xl text-alma-gold opacity-90">Ines</p>
@@ -467,30 +462,30 @@
         </div>
     </section>
 
-    <!-- THE LAND (Warm Gradient Applied - BONNE PHOTO PORTUGAL FALAISE) -->
+    <!-- THE LAND -->
     <section class="relative h-[80vh] flex items-center justify-center overflow-hidden bg-gradient-to-b from-alma-obsidian via-alma-rust/20 to-alma-obsidian">
         <div class="separator-gradient"></div>
         <div class="absolute inset-0 z-0">
             <!-- PHOTO PORTUGAL : Falaises emblématiques dorées (Algarve style) -->
-            <img src="https://images.unsplash.com/photo-1566376536663-730c4273033b?q=80&w=2600&auto=format&fit=crop" 
+            <img src="https://images.unsplash.com/photo-1555881400-74d7d9d6d169?q=80&w=2600&auto=format&fit=crop" 
                  class="w-full h-full object-cover opacity-60 mix-blend-overlay" alt="Portugal">
             <div class="absolute inset-0 bg-black/40"></div>
         </div>
         <div class="relative z-10 text-center max-w-4xl px-6">
-            <span class="text-alma-gold text-[10px] tracking-[0.3em] uppercase block mb-6">The Land</span>
+            <span class="text-alma-gold text-[10px] tracking-[0.3em] uppercase block mb-6 font-sans">The Land</span>
             <h2 class="font-serif text-5xl md:text-7xl text-white mb-8 tracking-widest">Portugal</h2>
-            <p class="font-light text-white/90 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
+            <p class="font-light text-white/90 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed font-sans">
                 Raw beauty. Untamed cliffs. Ancient energy.<br>
                 From the misty forests of Sintra to the wild Alentejo coast.
             </p>
         </div>
     </section>
 
-    <!-- FOOTER (Warm Glow Added) -->
+    <!-- FOOTER -->
     <footer id="contact" class="bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-alma-rust/30 via-alma-obsidian to-alma-obsidian text-alma-cream pt-32 pb-12 relative border-t border-white/5">
         <div class="separator-gradient"></div>
         <div class="max-w-3xl mx-auto px-6 text-center mb-24">
-            <h2 class="font-serif text-4xl mb-8 text-alma-cream">The Promise</h2>
+            <h2 class="font-serif text-3xl md:text-4xl mb-8 text-alma-cream">The Promise</h2>
             <p class="text-xl font-light text-alma-sand/60 mb-12 italic">
                 Where movement becomes prayer. Where community becomes mirror.
             </p>
@@ -498,7 +493,7 @@
                 Join the club
             </a>
         </div>
-        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-[10px] uppercase tracking-widest text-alma-sand/30 font-light">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-[10px] uppercase tracking-widest text-alma-sand/30 font-light font-sans">
             <div class="mb-4 md:mb-0"><span class="font-serif text-xl block mb-2">ALMA</span>© 2025 Rewild The Mind</div>
             <div class="flex space-x-8"><a href="#" class="hover:text-white">Instagram</a><a href="#" class="hover:text-white">Contact</a></div>
         </div>
@@ -523,10 +518,8 @@
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     const index = entry.target.getAttribute('data-index');
-                    // Hide all images
                     images.forEach(img => img.classList.remove('opacity-100'));
                     images.forEach(img => img.classList.add('opacity-0'));
-                    // Show current image
                     const activeImg = document.getElementById(`img-${index}`);
                     if (activeImg) {
                         activeImg.classList.remove('opacity-0');
@@ -534,11 +527,9 @@
                     }
                 }
             });
-        }, { threshold: 0.5 }); // Trigger when 50% visible
-
+        }, { threshold: 0.5 });
         experienceBlocks.forEach(block => experienceObserver.observe(block));
         
-        // Mobile Menu
         const btn = document.getElementById('mobile-menu-btn');
         const menu = document.getElementById('mobile-menu');
         btn.addEventListener('click', () => {
